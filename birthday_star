@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int date, month;
+	cout << "Enter the Date of Birth : ";
+	cin >> date;
+	cout << "Enter the Months number : ";
+	cin >> month;
+	if ((month == 1 && (date >= 20 && date <= 31))|| (month == 2 && (date <= 18 && date >= 1)))
+		cout << "Aquarius";
+	else if ((month == 2 && (date >= 19 && date <= 31))  || (month == 3&& (date <= 20 && date >= 1)))
+		cout << "Pisces";
+	else if ((month == 3&& (date >= 21 && date <= 31)) || (month == 4&& (date <= 19 && date >= 1)))
+		cout << "Aries";
+	else if ((month == 4 && (date >= 20 && date <= 31))|| (month == 5&& (date <= 20 && date >= 1)))
+		cout << "Taurus";
+	else if ((month == 5 &&(date >= 21 && date <= 31)) || (month == 6 && (date <= 21 && date >= 1)))
+		cout << "Gemini";
+	else if ((month == 6 &&(date >= 22 && date <= 31))|| (month == 7 && (date <= 22 && date >= 1)))
+		cout << "Cancer";
+	else if ((month == 7 &&&& (date >= 23 && date <= 31))|| (month == 8 && (date <= 22 && date >= 1)))
+		cout << "Leo";
+	else if ((month == 8 && (date >= 23 && date <= 31))|| (month == 9&& (date <= 22 && date >= 1)))
+		cout << "Virgo";
+	else if ((month == 9&&(date >= 23 && date <= 31)) || (month == 10 && (date <= 22 && date >= 1)))
+		cout << "Libra";
+	else if ((month == 10  && (date >= 23 && date <= 31))|| (month == 11 && (date <= 21 && date >= 1)))
+		cout << "Scorpio";
+	else if ((month == 11&& (date >= 22 && date <= 31)) || (month == 12 && (date <= 19 && date >= 1)))
+		cout << "Sagittarius";
+	return 0;
+}
