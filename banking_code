@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float Annualinterest, balance,balance1=0, withdraw = 0, m, monthlyinterest, totalamount,deposit;
+	cout << "Enter the starting balance : ";
+	cin >> balance;
+	cout << "Enter the Annual interest : ";
+	cin >> Annualinterest;
+	cout << "Enter the number of Months : ";
+	cin >> m;
+	cout << endl;
+	for (int i = 1; i <= m; i++)
+	{
+		cout << "The amount deposited into the account : ";
+		cin >> deposit;
+		cout << "the amount withdrawn from the account : ";
+		cin >> withdraw;
+		if (deposit >= 0 && withdraw >= 0)
+		{
+			balance1 = balance1 + deposit;
+			withdraw = balance1 - withdraw;
+			totalamount = balance1 - withdraw;
+			monthlyinterest = balance1 / 12;
+			cout << endl;
+		}
+		else
+		{
+			cout << "Use of Negative Input";
+			break;
+		}
+		cout << "Total amount of deposits : " << balance1 << endl;
+		cout << "the total amount of withdrawal : " << totalamount << endl;
+		cout << "The ending balance : " << withdraw << endl;
+		cout << "the total interest earned : " << monthlyinterest << endl;
+	}
+	return 0;
+}
