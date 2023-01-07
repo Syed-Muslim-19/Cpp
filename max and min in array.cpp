@@ -2,10 +2,9 @@
 using namespace std;
 int main()
 {
-    int i, number, maximum, minimum;
+    int i, number, maximum, minimum,arr[100];
     cout << "Enter the number integers : \n";
     cin >> number;
-    int arr[number];
     cout<<"Input the number : \n";
     for (i = 0; i < number; i++)
     {
