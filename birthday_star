@@ -29,5 +29,7 @@ int main()
 		cout << "Scorpio";
 	else if ((month == 11&& (date >= 22 && date <= 31)) || (month == 12 && (date <= 19 && date >= 1)))
 		cout << "Sagittarius";
+	else if(month == 12 and (date >= 22 and date <= 31)) or (month == 1 and (date <= 19 and date >= 1)):
+	        cout << "Capricorn";
 	return 0;
 }
