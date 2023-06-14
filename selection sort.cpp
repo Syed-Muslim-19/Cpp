@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
-void SelectionSort(int arr[], int n)
+void SelectionSort(float arr[], int n)
 {
-	int temp,min;
+	float temp,min;
 	for (int i = 0; i < n; i++)
 	{
 		min = arr[i];
@@ -10,9 +10,9 @@ void SelectionSort(int arr[], int n)
 		{
 			if (arr[i] < arr[j])
 			{
-				temp = arr[j];
-				arr[j] = arr[i];
-				arr[i] = temp;
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
 			}
 		}
 	}
@@ -21,7 +21,8 @@ void SelectionSort(int arr[], int n)
 }
 int main()
 {
-	int n, arr[100];
+	float arr[100];
+	int n;
 	cout << "Enter the size of Array : ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
